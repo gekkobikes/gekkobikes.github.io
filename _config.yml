@@ -30,5 +30,5 @@ plugins:
 
 # sass
 sass:
-  sass_dir: 'styles'
+  sass_dir: 'assets/styles'
   style: compressed

@@ -1,9 +1,11 @@
 <footer>
   <nav>
     <ul class="footer-list">
-      <li><a href="">Brukerhåndbøker</a></li>
-      <li><a href="">Rammegeometri</a></li>
-      <li><a href="">Kontakt oss</a></li>
+      {% for item in page.footerlinks %}
+
+      <li><a href="{{item.linkUrl}}">{{item.linkText}}</a></li>
+
+      {% endfor %}
     </ul>
     <ul>
       <li class="instagram"><a href="" title="Følg oss på Instagram">Instagram</a></li>

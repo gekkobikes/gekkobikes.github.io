@@ -1,8 +1,6 @@
 # Gekko
 
-Foreløpig er det bare 1 fil som skal endres:
-[index.md](index.md)
-
-Her er det tre lister der man kan legge til eller fjerne punkter, eller oppdatere eksisterende verdier.
-
-Det kommer støtte for å endre lenker i header og footer på samme måte etter hvert.
+### Bruksanvisning
+- Det er kun èn fil som skal endres: [index.md](index.md) (trykk på pennen oppe til høyre for å endre)
+    - Her er det flere lister som man kan legge til eller fjerne punkter fra. Man kan også endre på de norske tekstene. 
+- Bilder lastes opp i [bildemappa](/images) og filnavnet brukes i [index.md](index.md)
