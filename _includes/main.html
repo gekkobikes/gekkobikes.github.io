@@ -1,0 +1,56 @@
+<main>
+  <!-- KARUSELL -->
+  {% if page.carousel[0] != null %}
+  <div class="block block-carousel">
+    <ul id="carousel-1" class="carousel-list">
+
+      {% for item in page.carousel %}
+
+      <li class="carousel-list-item">
+        <div class="block block-bgimage" style="background-image: url('./sampleimages/{{item.imageFileName}}');">
+          <h2>{{item.name}}</h2>
+          <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
+        </div>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+  </div>
+  {% endif %}
+
+
+  <!-- FULL BREDDE -->
+  {% for item in page.fullwidth %}
+
+  <div class="block block-bgimage" style="background-image: url('./sampleimages/{{item.imageFileName}}');">
+    <h2>{{item.name}}</h2>
+    <p class="intro">{{item.intro}}</p>
+    <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
+  </div>
+
+  {% endfor %}
+
+
+  <!-- HALV BREDDE -->
+  {% if page.halfwidth[0] != null %}
+
+  <div class="block">
+
+    {% for item in page.halfwidth %}
+
+    <div class="block block-half block-bgimage"
+      style="background-image: url('./sampleimages/{{item.imageFileName}}');">
+      <h2>{{item.name}}</h2>
+      <p class="intro">{{item.intro}}</p>
+      <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
+    </div>
+
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+  {{content}}
+
+</main>

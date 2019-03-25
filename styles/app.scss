@@ -1,0 +1,230 @@
+---
+---
+// The above Front Matter is required here because the sass base path is set in _config.yml
+
+$large-up: 1200px;
+$medium-down: 'max-width: 799px';
+$medium-up: 'min-width: 800px';
+
+@mixin media($range) {
+  @media ($range) {
+    @content;
+  }
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: #333;
+}
+
+a {
+  color: white;
+}
+
+.mouse-user *:focus {
+  outline: none;
+}
+
+button {
+  font-size: inherit;
+  border: 1px solid black;
+}
+
+main > .block:first-child {
+  margin-top: 74px;
+
+  @include media($medium-up) {
+    margin-top: 95px;
+  }
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  height: 34px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  transition: height .2s ease;
+
+  @include media($medium-up) {
+    height: 55px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .logo {
+    display: inline-block;
+
+    img {
+      display: block;
+      width: 140px;
+      height: 34px;
+      transition: width .2s ease, height .2s ease;
+
+      @include media($medium-up) {
+        width: 221px;
+        height: 51px;
+      }
+    }
+  }
+
+  .btn-menu {
+    position: relative;
+    display: inline-block;
+    // align-self: center;
+    margin-top: 6px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('../img/icon-menu.svg') no-repeat 0 0;
+    }
+
+    &.active:after {
+      background-image: url('../img/icon-menu-close.svg');
+    }
+
+    @include media($medium-up) {
+      display: none;
+    }
+  }
+
+  #menu.open .mainnav {
+    display: block;
+  }
+
+  .mainnav {
+    display: none;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-transform: uppercase;
+
+    @include media($medium-down) {
+      position: absolute;
+      top: 74px;
+      right: 0;
+      left: 0;
+      background-color: white;
+    }
+
+    @include media($medium-up) {
+      display: block;
+      margin-top: 22px;
+    }
+
+    li {
+      color: #666;
+
+      @include media($medium-up) {
+        display: inline-block;
+
+        &:not(:first-child) {
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 2px solid currentColor;
+        }
+      }
+    }
+
+    a {
+      font-size: 0.872rem;
+      font-weight: 600;
+      letter-spacing: 0.03rem;
+      text-decoration: none;
+      color: #555;
+
+      @include media($medium-down) {
+        display: block;
+        padding: 15px 20px;
+        border-top: 2px solid currentColor;
+      }
+
+      @include media($medium-up) {
+        border-bottom: 2px solid white;
+      }
+
+      &:hover,
+      &:focus {
+        border-color: #666;
+      }
+    }
+  }
+}
+
+.block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 394px;
+
+  &-bgimage {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  // @include media($medium-up) {
+    min-height: 50vw;//56.25vw
+
+    .block-half {
+      width: 50%;
+      height: 50vw;//56.25vw
+    }
+  // }
+
+  &-carousel {
+    justify-content: flex-start;
+    overflow: scroll;
+
+    .carousel-list {
+      display: block;
+      min-width: 3350px;
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .carousel-list-item {
+      display: block;
+      float: left;
+      width: 100vw;
+    }
+
+    .block {
+      flex-direction: column;
+    }
+  }
+
+  * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
