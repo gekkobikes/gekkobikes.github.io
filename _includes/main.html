@@ -7,7 +7,7 @@
       {% for item in page.carousel %}
 
       <li class="carousel-list-item">
-        <div class="block block-bgimage" style="background-image: url('./sampleimages/{{item.imageFileName}}');">
+        <div class="block block-bgimage" style="background-image: url('./images/{{item.imageFileName}}');">
           <h2>{{item.name}}</h2>
           <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
         </div>
@@ -23,7 +23,7 @@
   <!-- FULL BREDDE -->
   {% for item in page.fullwidth %}
 
-  <div class="block block-bgimage" style="background-image: url('./sampleimages/{{item.imageFileName}}');">
+  <div class="block block-bgimage" style="background-image: url('./images/{{item.imageFileName}}');">
     <h2>{{item.name}}</h2>
     <p class="intro">{{item.intro}}</p>
     <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
@@ -39,8 +39,7 @@
 
     {% for item in page.halfwidth %}
 
-    <div class="block block-half block-bgimage"
-      style="background-image: url('./sampleimages/{{item.imageFileName}}');">
+    <div class="block block-half block-bgimage" style="background-image: url('./images/{{item.imageFileName}}');">
       <h2>{{item.name}}</h2>
       <p class="intro">{{item.intro}}</p>
       <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
