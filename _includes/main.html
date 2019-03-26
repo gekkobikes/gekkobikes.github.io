@@ -2,49 +2,71 @@
   <!-- KARUSELL -->
   {% if page.carousel[0] != null %}
   <div class="block block-carousel">
-    <ul id="carousel-1" class="carousel-list">
+    <div id="carousel" class="carousel-wrapper">
+      <div class="carousel-inner">
+        <ul class="carousel-list carousel-slide-0">
 
-      {% for item in page.carousel %}
+          {% for item in page.carousel %}
+          <li class="carousel-list-item">
+            <div class="block block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+              <div class="block-content">
+                <h2 class="title">{{item.name}}</h2>
+                <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
 
-      <li class="carousel-list-item">
-        <div class="block block-bgimage" style="background-image: url('./images/{{item.imageFileName}}');">
-          <h2>{{item.name}}</h2>
-          <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
-        </div>
-      </li>
-
-      {% endfor %}
-
-    </ul>
+        </ul>
+      </div>
+      <button
+        type="button"
+        class="carousel-arrow carousel-arrow-prev"
+        data-carousel="c1"
+        data-move="prev"
+        aria-hidden="true"
+        hidden
+      ></button>
+      <button
+        type="button"
+        class="carousel-arrow carousel-arrow-next"
+        data-carousel="c1"
+        data-move="next"
+        aria-hidden="true"
+        hidden
+      ></button>
+      <ul id="dots" class="carousel-dots">
+        <li><input type="radio" name="c1" data-value="0" id="i1" checked><label for="i1"></label></li>
+        <li><input type="radio" name="c1" data-value="1" id="i2"><label for="i2"></label></li>
+        <li><input type="radio" name="c1" data-value="2" id="i3"><label for="i3"></label></li>
+      </ul>
+    </div>
   </div>
   {% endif %}
 
-
   <!-- FULL BREDDE -->
   {% for item in page.fullwidth %}
-
-  <div class="block block-bgimage" style="background-image: url('./images/{{item.imageFileName}}');">
-    <h2>{{item.name}}</h2>
-    <p class="intro">{{item.intro}}</p>
-    <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
-  </div>
-
-  {% endfor %}
-
-
-  <!-- HALV BREDDE -->
-  {% if page.halfwidth[0] != null %}
-
-  <div class="block">
-
-    {% for item in page.halfwidth %}
-
-    <div class="block block-half block-bgimage" style="background-image: url('./images/{{item.imageFileName}}');">
-      <h2>{{item.name}}</h2>
+  <div class="block block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+    <div class="block-content">
+      <h2 class="brand-type">{{item.name}}</h2>
       <p class="intro">{{item.intro}}</p>
       <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
     </div>
+  </div>
+  {% endfor %}
 
+  <!-- HALV BREDDE -->
+  {% if page.halfwidth[0] != null %}
+  <div class="block">
+
+    {% for item in page.halfwidth %}
+    <div class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+      <div class="block-content">
+        <h2 class="brand-type">{{item.name}}</h2>
+        <p class="intro">{{item.intro}}</p>
+        <p><a href="{{item.linkUrl}}" class="btn">{{item.linkText}}</a></p>
+      </div>
+    </div>
     {% endfor %}
 
   </div>

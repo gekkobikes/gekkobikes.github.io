@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ "/assets/styles/app.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet"
+      media="screen,projection" />
+  </head>
+  <body>
+    <div class="page">
+      {% include header.html %}
+      {% include main.html %}
+      {% include footer.html %}
+    </div>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="{{ "/assets/styles/app.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet"
-    media="screen,projection" />
-</head>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script>
+      window.onload = function () {
+        carousel.init('carousel');
+      };
+    </script>
 
-<body>
-  <div class="page">
-
-    {% include header.html %}
-
-    {% include main.html %}
-
-    {% include footer.html %}
-
-  </div>
-
-  <script src="./assets/js/app.js"></script>
-  {% include tracking.html %}
-
-</body>
-
+    {% include tracking.html %}
+  </body>
 </html>

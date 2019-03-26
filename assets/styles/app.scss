@@ -2,14 +2,26 @@
 ---
 // The above Front Matter is required here because the sass base path is set in _config.yml
 
-$large-up: 1200px;
+$small-up: 'min-width: 450px';
 $medium-down: 'max-width: 799px';
 $medium-up: 'min-width: 800px';
+$large-up: 'min-width: 1200px';
 
 @mixin media($range) {
   @media ($range) {
     @content;
   }
+}
+
+@mixin visuallyhidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 html {
@@ -46,6 +58,7 @@ main > .block:first-child {
 
 .head {
   position: fixed;
+  z-index: 10;
   top: 0;
   height: 34px;
   width: 100%;
@@ -184,6 +197,7 @@ main > .block:first-child {
   justify-content: center;
   align-content: center;
   min-height: 394px;
+  min-height: 50vw;//56.25vw
 
   &-bgimage {
     background-repeat: no-repeat;
@@ -191,25 +205,118 @@ main > .block:first-child {
     background-size: cover;
   }
 
-  // @include media($medium-up) {
-    min-height: 50vw;//56.25vw
+  &-padding {
+    padding: 10px;
+    box-sizing: border-box;
 
-    .block-half {
+    @include media($medium-up) {
+      padding: 20px;
+    }
+  }
+
+  @include media($medium-up) {
+    &-half {
       width: 50%;
       height: 50vw;//56.25vw
     }
+
+    &-text {
+      &-right {
+        justify-content: flex-end;
+
+        .block-content {
+          margin-right: 100px;
+        }
+      }
+
+      &-left {
+        justify-content: flex-start;
+
+        .block-content {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+
+  @include media($large-up) {
+    &-text {
+      &-right {
+        .block-content {
+          margin-right: 15vw;
+        }
+      }
+
+      &-left {
+        .block-content {
+          margin-left: 15vw;
+        }
+      }
+    }
+  }
+
+  &-content {
+    margin: 10px;
+    text-align: center;
+
+    @include media($small-up) {
+      // max-width: 340px;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+
+    @include media($medium-up) {
+      max-width: 340px;
+
+      .block-carousel & {
+        max-width: 400px;
+      }
+    }
+  }
+
+  // .block {
+  //   display: flex;
   // }
 
   &-carousel {
+    position: relative;
     justify-content: flex-start;
     overflow: scroll;
 
+    .carousel-inner {
+      width: 100vw;
+      overflow: hidden;
+    }
+
     .carousel-list {
+      position: relative;
       display: block;
-      min-width: 3350px;
       margin: 0;
       padding-left: 0;
       list-style: none;
+      transition: left .3s ease-in-out;
+
+      &.carousel-slide-0 { left: 0; }
+      &.carousel-slide-1 { left: -100vw; }
+      &.carousel-slide-2 { left: -200vw; }
+      &.carousel-slide-3 { left: -300vw; }
+      &.carousel-slide-4 { left: -400vw; }
+      &.carousel-slide-5 { left: -500vw; }
+      &.carousel-slide-6 { left: -600vw; }
+      &.carousel-slide-7 { left: -700vw; }
+      &.carousel-slide-8 { left: -800vw; }
+      &.carousel-slide-9 { left: -900vw; }
+      &.carousel-slide-10 { left: -1000vw; }
+      &.carousel-slide-11 { left: -1100vw; }
+      &.carousel-slide-12 { left: -1200vw; }
+      &.carousel-slide-13 { left: -1300vw; }
+      &.carousel-slide-14 { left: -1400vw; }
+      &.carousel-slide-15 { left: -1500vw; }
+      &.carousel-slide-16 { left: -1600vw; }
+      &.carousel-slide-17 { left: -1700vw; }
+      &.carousel-slide-18 { left: -1800vw; }
+      &.carousel-slide-19 { left: -1900vw; }
+      &.carousel-slide-20 { left: -2000vw; }
     }
 
     .carousel-list-item {
@@ -218,13 +325,190 @@ main > .block:first-child {
       width: 100vw;
     }
 
-    .block {
-      flex-direction: column;
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      width: 40px;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        left: 7px;
+        width: 25px;
+        height: 4px;
+        background-color: white;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+      &-prev {
+        left: 15px;
+
+        &:before {
+          top: 30px;
+        }
+        &:after {
+          top: 15px;
+        }
+      }
+
+      &-next {
+        right: 15px;
+
+        &:before {
+          top: 15px;
+        }
+        &:after {
+          top: 30px;
+        }
+      }
+    }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin-right: 6px;
+
+        input {
+          @include visuallyhidden();
+
+          + label {
+            display: block;
+            width: 13px;
+            height: 13px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 50%;
+          }
+
+          &:checked + label {
+            background-color: white;
+          }
+        }
+      }
     }
   }
 
   * {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+.title,
+.brand-type {
+  font-size: 24px;
+  line-height: 1;
+
+  @include media($small-up) {
+    font-size: 40px;
+  }
+
+  @include media($medium-up) {
+    font-size: 60px;
+  }
+}
+
+.title {
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include media($medium-up) {
+    font-size: 50px;
+  }
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: 300;
+
+  @include media($small-up) {
+    font-size: 24px;
+  }
+
+  @include media($medium-up) {
+    font-size: 28px;
+  }
+}
+
+a.btn {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+
+footer {
+  color: black;
+  background-color: white;
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-transform: uppercase;
+
+    @include media($medium-up) {
+      display: block;
+    }
+
+    li {
+      color: #666;
+
+      @include media($medium-up) {
+        display: inline-block;
+
+        &:not(:first-child) {
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 2px solid currentColor;
+        }
+      }
+    }
+
+    a {
+      font-size: 0.872rem;
+      font-weight: 600;
+      letter-spacing: 0.03rem;
+      text-decoration: none;
+      color: #555;
+
+      @include media($medium-down) {
+        display: block;
+        padding: 15px 20px;
+        border-top: 2px solid currentColor;
+      }
+
+      @include media($medium-up) {
+        border-bottom: 2px solid white;
+      }
+
+      &:hover,
+      &:focus {
+        border-color: #666;
+      }
+    }
   }
 }
