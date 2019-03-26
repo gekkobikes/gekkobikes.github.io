@@ -7,16 +7,19 @@ carousel:
     imageFileName: crewdson05.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
+    textPosition: right
 
 -   name: Designet for norske forhold siden 1995
     imageFileName: crewdson06.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
+    textPosition: left
 
 -   name: Designet for norske forhold siden 1995
     imageFileName: crewdson03.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
+    textPosition: right
 
 # FORSIDE BLOKKER 100% BREDDE 
 fullwidth:
@@ -25,12 +28,14 @@ fullwidth:
     imageFileName: crewdson02.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
+    textPosition: left
 
 -   name: ATV
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: crewdson03.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
+    textPosition: right
 
 # FORSIDE BLOKKER 50% BREDDE 
 halfwidth:
