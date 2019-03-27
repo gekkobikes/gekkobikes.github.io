@@ -13,7 +13,7 @@ carousel:
     imageFileName: crewdson06.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
-    textPosition: left
+    textPosition: right
 
 -   name: Designet for norske forhold siden 1995
     imageFileName: crewdson03.jpg

@@ -8,22 +8,36 @@ var carousel = {
   },
 
   activateCarousels: function () {
-    var carouselList = document.querySelector('#' + carousel.carouselID + ' ul.carousel-list'),
-      dots = document.querySelectorAll('#' + carousel.carouselID + ' input[type="radio"]'),
-      items = dots.length,
+    var car = document.querySelector('#' + carousel.carouselID),
+      list = car.querySelector('ul.carousel-list'),
+      items = list.querySelectorAll('.carousel-list-item'),
+      itemsCount = items.length,
       i = 0;
     
-    carouselList.style.width = items * 100 + 'vw'
+    list.style.width = itemsCount * 100 + 'vw'
+
+    var htmlCarouselDotsList = '<ul id="dots" class="carousel-dots"></ul>';
     
-    if (items && carousel.arrowButtons) {
-      if (items > 1) {
+    if (itemsCount && carousel.arrowButtons) {
+      if (itemsCount > 1) {
+        car.innerHTML += htmlCarouselDotsList;
         carousel.activateNextAndPrev();
       }
-      for (i = 0; i < items; i++) {
-        dots[i].addEventListener('change', function (e) {
+
+      var dotsList = document.querySelector('#' + carousel.carouselID + ' #dots');
+
+      for (i = 0; i < itemsCount; i++) {
+        dotsList.innerHTML += '<li><input type="radio" name="carousel" class="dot" data-value="' + i + '" id="i' + i + '"' + (i === 0 ? ' checked' : '') + '><label for="i' + i + '"></label></li>'
+        document.querySelector('#i' + i).addEventListener('change', function (e) {
           carousel.carouselChange(e.target.dataset.value);
-        })
+        });
       }
+
+      document.addEventListener('click', function (e) {
+        if (event.target.matches('.dot')) {
+          carousel.carouselChange(e.target.dataset.value);
+        }
+      }, false);
     }
   },
 
