@@ -2,6 +2,8 @@
 ---
 // The above Front Matter is required here because the sass base path is set in _config.yml
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
 $small-up: 'min-width: 450px';
 $medium-down: 'max-width: 799px';
 $medium-up: 'min-width: 800px';
@@ -25,7 +27,7 @@ $large-up: 'min-width: 1200px';
 }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 100%;
 }
 
@@ -221,8 +223,12 @@ a.block {
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  min-height: 394px;
-  min-height: 50vw;//56.25vw
+  height: 50vw;//56.25vw
+
+  @include media($medium-down) {
+    min-height: 50vw;//56.25vw
+    height: auto;
+  }
 
   &-bgimage {
     background-repeat: no-repeat;
@@ -292,10 +298,10 @@ a.block {
     }
 
     @include media($medium-up) {
-      max-width: 340px;
+      max-width: 360px;
 
       .block-carousel & {
-        max-width: 400px;
+        max-width: 440px;
       }
     }
   }
@@ -489,15 +495,16 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 8px 12px;
-  font-size: calc(.5vw + 12px);
-  font-weight: 600;
+  font-size: calc(.5vw + 9px);
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.15rem;
   border: 1px solid white;
 
   @include media($medium-up) {
     padding: 15px 25px;
-    font-size: inherit;
+    font-size: 13px;
   }
 }
 
