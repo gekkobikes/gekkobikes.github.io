@@ -35,11 +35,11 @@ var carousel = {
       }
 
       document.addEventListener('click', function (e) {
-        if (event.target.matches('.carousel-dot')) {
+        if (e.target.matches('.carousel-dot')) {
           carousel.carouselChange(e.target.dataset.value);
         }
 
-        if (event.target.matches('.carousel-nav')) {
+        if (e.target.matches('.carousel-nav')) {
           car.classList.add('slide');
           setTimeout(function () {
             car.classList.remove('slide');
