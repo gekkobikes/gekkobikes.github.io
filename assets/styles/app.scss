@@ -166,7 +166,7 @@ main > .block:first-child {
     }
 
     a {
-      font-size: 0.872rem;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.03rem;
       text-decoration: none;
@@ -207,6 +207,7 @@ a.block {
     transition: opacity .2s ease-in-out;
   }
 
+  // &.hover {
   &:hover,
   &:focus {
     &:after {
@@ -296,17 +297,6 @@ a.block {
       .block-carousel & {
         max-width: 400px;
       }
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      padding: 15px 25px;
-      font-weight: 600;
-      text-decoration: none;
-      text-transform: uppercase;
-      border: 1px solid white;
     }
   }
 
@@ -409,9 +399,10 @@ a.block {
     .carousel-dots {
       position: absolute;
       z-index: 2;
-      bottom: 20px;
+      bottom: 40px;
       right: 20px;
       left: 20px;
+      height: 0;
       margin-left: 0;
       padding-left: 0;
       list-style: none;
@@ -441,14 +432,15 @@ a.block {
     }
   }
 
-  * {
-    margin-top: 0;
-    margin-bottom: 0;
+  .intro,
+  .btn {
+    text-shadow: 0 0 10px #000;
   }
 }
 
 .title,
 .brand-type {
+  margin: 0;
   font-size: 24px;
   line-height: 1;
 
@@ -471,21 +463,53 @@ a.block {
 }
 
 .intro {
-  font-size: 20px;
+  font-size: calc(3vw / 2 + 12px);
   font-weight: 300;
-
-  @include media($small-up) {
-    font-size: 24px;
-  }
 
   @include media($medium-up) {
     font-size: 28px;
   }
 }
 
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  font-size: calc(.5vw + 12px);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+
+  @include media($medium-up) {
+    font-size: inherit;
+  }
+}
+
 footer {
+  padding: 20px;
   color: black;
   background-color: white;
+
+  @include media($medium-up) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    nav {
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
 
   ul {
     margin: 0;
@@ -512,21 +536,11 @@ footer {
     }
 
     a {
-      font-size: 0.872rem;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.03rem;
       text-decoration: none;
       color: #555;
-
-      @include media($medium-down) {
-        display: block;
-        padding: 15px 20px;
-        border-top: 2px solid currentColor;
-      }
-
-      @include media($medium-up) {
-        border-bottom: 2px solid white;
-      }
 
       &:hover,
       &:focus {

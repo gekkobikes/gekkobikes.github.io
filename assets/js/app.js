@@ -24,3 +24,19 @@ btnMenu.onclick = function() {
     menuIsOpen = false;
   }
 };
+
+// Hovering link block
+// var blocks = document.querySelectorAll('a.block');
+// // for (i = 0; i < blocks; i++) {
+// //   var el = blocks[i];
+// blocks.forEach(el => {
+//   el.onmouseenter = function(e) {
+//     console.log(e.currentTarget);
+//     if (this != e.currentTarget) { return false; }
+//     el.classList.add('hover');
+//   }
+//   el.onmouseleave = function(e) {
+//     if (this != e.currentTarget) { return false; }
+//     el.classList.remove('hover');
+//   }
+// }
