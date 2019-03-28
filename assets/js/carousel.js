@@ -37,6 +37,12 @@ var carousel = {
         if (event.target.matches('.dot')) {
           carousel.carouselChange(e.target.dataset.value);
         }
+        if (event.target.matches('.carousel-arrow') || event.target.matches('.dot')) {
+          car.classList.add('slide');
+          setTimeout(() => {
+            car.classList.remove('slide');
+          }, 300);
+        }
       }, false);
     }
   },
