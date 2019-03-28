@@ -39,7 +39,7 @@ var carousel = {
         }
         if (event.target.matches('.carousel-arrow') || event.target.matches('.dot')) {
           car.classList.add('slide');
-          setTimeout(() => {
+          setTimeout(function () {
             car.classList.remove('slide');
           }, 300);
         }
