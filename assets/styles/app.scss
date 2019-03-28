@@ -74,6 +74,8 @@ main > .block:first-child {
   }
 
   .wrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -219,10 +221,13 @@ a.block {
 }
 
 .block {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+  align-items: center;
   height: 50vw;//56.25vw
 
   @include media($medium-down) {
@@ -518,12 +523,14 @@ footer {
     padding-bottom: 80px;
 
     nav {
-      max-width: 1200px;
-      margin-right: auto;
-      margin-left: auto;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
