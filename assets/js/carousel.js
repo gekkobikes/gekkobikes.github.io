@@ -1,3 +1,7 @@
+if (!Element.prototype.matches) {
+  Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+}
+
 var carousel = {
   arrowButtons: true,
   carouselID: '',
@@ -27,17 +31,15 @@ var carousel = {
       var dotsList = document.querySelector('#' + carousel.carouselID + ' #dots');
 
       for (i = 0; i < itemsCount; i++) {
-        dotsList.innerHTML += '<li><input type="radio" name="carousel" class="dot" data-value="' + i + '" id="i' + i + '"' + (i === 0 ? ' checked' : '') + '><label for="i' + i + '"></label></li>'
-        document.querySelector('#i' + i).addEventListener('change', function (e) {
-          carousel.carouselChange(e.target.dataset.value);
-        });
+        dotsList.innerHTML += '<li><input type="radio" name="carousel" class="carousel-dot carousel-nav" data-value="' + i + '" id="i' + i + '"' + (i === 0 ? ' checked' : '') + '><label for="i' + i + '"></label></li>'
       }
 
       document.addEventListener('click', function (e) {
-        if (event.target.matches('.dot')) {
+        if (event.target.matches('.carousel-dot')) {
           carousel.carouselChange(e.target.dataset.value);
         }
-        if (event.target.matches('.carousel-arrow') || event.target.matches('.dot')) {
+
+        if (event.target.matches('.carousel-nav')) {
           car.classList.add('slide');
           setTimeout(function () {
             car.classList.remove('slide');
