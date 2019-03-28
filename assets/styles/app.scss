@@ -303,7 +303,7 @@ a.block {
   &-carousel {
     position: relative;
     justify-content: flex-start;
-    overflow: scroll;
+    overflow: hidden;
 
     .carousel-inner {
       width: 100vw;
