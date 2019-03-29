@@ -4,19 +4,19 @@ layout: default
 # FORSIDE KARUSELL
 carousel:
 -   name: Designet for norske forhold siden 1995
-    imageFileName: crewdson05.jpg
+    imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
     textPosition: right
 
 -   name: Designet for norske forhold siden 1995
-    imageFileName: crewdson06.jpg
+    imageFileName: 1600x800_elsykkel_gekko_ss18.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
     textPosition: right
 
 -   name: Designet for norske forhold siden 1995
-    imageFileName: crewdson03.jpg
+    imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
     textPosition: right
@@ -25,14 +25,14 @@ carousel:
 fullwidth:
 -   name: GRV
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: crewdson02.jpg
+    imageFileName: 1600x800_xeed_barn_jente_skog.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
     textPosition: left
 
 -   name: ATV
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: crewdson03.jpg
+    imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
     textPosition: right
@@ -41,13 +41,13 @@ fullwidth:
 halfwidth:
 -   name: CTY
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: crewdson05.jpg
+    imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
 
 -   name: STR
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: crewdson04.jpg
+    imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
 
