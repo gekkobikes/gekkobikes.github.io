@@ -26,6 +26,10 @@ $large-up: 'min-width: 1200px';
   width: 1px;
 }
 
+.visuallyhidden {
+  @include visuallyhidden();
+}
+
 html {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -256,6 +260,7 @@ a.block {
   &-video {
     position: relative;
     padding: 0 0 56.25%; /* 16:9 */
+    // padding: 0 0 50%; /* 2:1 */
     height: 0;
 
     &:after {
@@ -627,6 +632,10 @@ footer {
 
     li {
       color: #666;
+
+      @include media($medium-down) {
+        margin-bottom: 20px;
+      }
 
       @include media($medium-up) {
         display: inline-block;
