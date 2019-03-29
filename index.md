@@ -63,22 +63,22 @@ halfwidth:
 # HEADER LENKER
 headerlinks:
 -   linkText: Terreng
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Gekko
 
 -   linkText: Gravel
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://www.sport1.no/sykkel/sykler/landeveissykkel/?b=Gekko
 
 -   linkText: Hybrid
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://www.sport1.no/sykkel/sykler/hybridsykkel/?b=Gekko
 
 -   linkText: Urban
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Gekko
 
 -   linkText: Junior
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://www.sport1.no/sykkel/sykler/barne--og-juniorsykkel/?b=Gekko
 
 -   linkText: E-bike
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Gekko
 
 # FOOTER LENKER
 footerlinks:

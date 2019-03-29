@@ -28,7 +28,7 @@
   <!-- FULL BREDDE VIDEO -->
   {% for item in page.fullwidthvideo %}
   <div class="block block-video block-bgimage block-video-youtube block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
-    <iframe frameborder="0" src="" allowTransparency="true" allowfullscreen allow="autoplay"></iframe>
+    <iframe title="Youtube video: {{item.name}}" frameborder="0" src="" allowTransparency="true" allowfullscreen allow="autoplay"></iframe>
     <div class="block-content">
       <p class="intro">{{item.intro}}</p>
       <h2 class="title">{{item.name}}</h2>
