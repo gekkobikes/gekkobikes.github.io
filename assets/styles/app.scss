@@ -100,7 +100,7 @@ main > .block:first-child {
       transition: width .2s ease, height .2s ease;
 
       @include media($medium-up) {
-        width: 221px;
+        width: 211px;
         height: 51px;
       }
     }
