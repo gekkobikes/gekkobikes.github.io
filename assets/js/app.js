@@ -40,3 +40,14 @@ btnMenu.onclick = function() {
 //     el.classList.remove('hover');
 //   }
 // }
+
+// Video Youtube
+function videoPlay(videoElementButton, videoId) {
+  var youtubeUrl = 'https://www.youtube-nocookie.com/embed/'+videoId+'?autoplay=1&modestbranding=1&rel=0';
+  var iframe = videoElementButton.parentNode.parentNode.querySelector('iframe');
+  iframe.src = youtubeUrl;
+  iframe.style = 'z-index: 999';
+  if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0) {
+    iframe.style.setAttribute('z-index', '999');
+  }
+}

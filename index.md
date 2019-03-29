@@ -13,12 +13,21 @@ carousel:
     imageFileName: 1600x800_elsykkel_gekko_ss18.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
-    textPosition: right
+    textPosition: left
 
 -   name: Designet for norske forhold siden 1995
     imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
+    textPosition: left
+
+# FORSIDE VIDEO BLOKK 100% BREDDE 
+fullwidthvideo:
+-   name: HUSK Å BESKYTTE HODET!
+    intro: Velg riktig sykkelhjelm
+    imageFileName: 1600x800_xeed_closeup_terreng.jpg
+    linkText: video
+    youtubeId: zB4f-uK1CuE
     textPosition: right
 
 # FORSIDE BLOKKER 100% BREDDE 
@@ -35,7 +44,7 @@ fullwidth:
     imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
-    textPosition: right
+    textPosition: left
 
 # FORSIDE BLOKKER 50% BREDDE 
 halfwidth:

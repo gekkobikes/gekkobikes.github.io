@@ -6,13 +6,9 @@
     <div id="menu">
       <button id="btn_menu" class="btn-menu" aria-label="Meny"></button>
       <ul class="mainnav" role="navigation">
-
         {% for item in page.headerlinks %}
-
         <li><a href="{{item.linkUrl}}">{{item.linkText}}</a></li>
-
         {% endfor %}
-
       </ul>
     </div>
   </div>
