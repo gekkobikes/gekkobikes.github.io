@@ -20,8 +20,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gekkobikes.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 keywords: "gekko, gekkobikes, sykkel, terreng, el-sykkel, hybrid, landeveissykkel"
-google_analytics: "UA-XXX"
-twitter_username: 
+google_analytics:
+twitter_username:
 
 # Build settings
 markdown: kramdown
