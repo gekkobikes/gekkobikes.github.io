@@ -25,7 +25,7 @@ carousel:
 fullwidthvideo:
 -   name: HUSK Å BESKYTTE HODET!
     intro: Velg riktig sykkelhjelm
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
+    imageFileName: 1600x900_video_sample.jpg
     linkText: video
     youtubeId: zB4f-uK1CuE
     textPosition: right
