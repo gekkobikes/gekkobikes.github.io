@@ -2,15 +2,15 @@
 layout: null
 ---
 
-  var urlsToCache = [
-    '/',
-    '/assets/styles/app.css',
-    '{{site.static_files | map: "path" | join: "', '"}}',
-    'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
-    'https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc4.woff2',
-    'https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2',
-    'https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4.woff2',
-  ];
+var urlsToCache = [
+  '/',
+  '/assets/styles/app.css',
+  '{{site.static_files | map: "path" | join: "', '"}}',
+  'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
+  'https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc4.woff2',
+  'https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2',
+  'https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4.woff2',
+];
 
 var CACHE_NAME = 'gekko-cache-v{{site.time | date: '%s%N'}}';
 

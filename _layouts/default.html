@@ -37,9 +37,6 @@
   {% endif %}
 </head>
 <body>
-  <!-- Install Service Worker -->
-  <amp-install-serviceworker src="/sw.js" data-iframe-src="{{site.url}}/sw.html" layout="nodisplay">
-  </amp-install-serviceworker>
   <div class="page">
     {% include header.html %}
     {% include main.html %}
@@ -58,6 +55,11 @@
     {% include tracking.html %}
   {% endif %}
   
-  {% include sw.html %}
+  {% if jekyll.environment == "production" %}
+    <!-- Install Service Worker -->
+    <amp-install-serviceworker src="/sw.js" data-iframe-src="{{site.url}}/sw.html" layout="nodisplay">
+    </amp-install-serviceworker>
+    {% include sw.html %}
+  {% endif %}
 </body>
 </html>
