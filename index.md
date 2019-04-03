@@ -32,14 +32,16 @@ fullwidthvideo:
 
 # FORSIDE BLOKKER 100% BREDDE 
 fullwidth:
--   name: GRV
+-   name: MTN JR
+    logoFileName: GK_CategoryLogo_MTN-JR_White_RGB_72dpi.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_barn_jente_skog.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
     textPosition: left
 
--   name: ATV
+-   name: GRV
+    logoFileName: GK_CategoryLogo_GRV_White_RGB_72dpi.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
@@ -49,12 +51,14 @@ fullwidth:
 # FORSIDE BLOKKER 50% BREDDE 
 halfwidth:
 -   name: CTY
+    logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
 
 -   name: STR
+    logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
     linkText: Se alle cykler
