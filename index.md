@@ -94,4 +94,16 @@ footerlinks:
 
 -   linkText: Kontakt oss
     linkUrl: http://gekkobikes.no/
+
+# FOOTER SOSIALE LENKER
+footerSocialLinks:
+-   linkText: Følg oss på Instagram
+    linkUrl: https://www.instagram.com/xxx
+    iconFileName: icon-instagram.svg
+    altText: Instagram
+
+-   linkText: Følg oss på Facebook
+    linkUrl: https://www.facebook.com/xxx
+    iconFileName: icon-facebook.svg
+    altText: Facebook
 ---

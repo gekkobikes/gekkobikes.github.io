@@ -637,16 +637,6 @@ footer {
       @include media($medium-down) {
         margin-bottom: 20px;
       }
-
-      @include media($medium-up) {
-        display: inline-block;
-
-        &:not(:first-child) {
-          margin-left: 15px;
-          padding-left: 15px;
-          border-left: 2px solid currentColor;
-        }
-      }
     }
 
     a {
@@ -659,6 +649,41 @@ footer {
       &:hover,
       &:focus {
         border-color: #666;
+      }
+    }
+
+    &.footer-list li {
+      @include media($medium-up) {
+        display: inline-block;
+
+        &:not(:first-child) {
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 2px solid currentColor;
+        }
+      }
+    }
+
+    &.social-list {
+      li {
+        display: inline-block;
+
+        @include media($medium-up) {
+          margin-top: -12px;
+        }
+
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+
+      a {
+        display: block;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
       }
     }
   }
