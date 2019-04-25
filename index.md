@@ -11,19 +11,19 @@ carousel:
 
 # FORSIDE BLOKKER 50% BREDDE 
 halfwidth:
--   name: CTY
-    logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://gekkobikes.no/
+-   name: GRV
+    logoFileName: GK_CategoryLogo_GRV_White_RGB_72dpi.png
+    intro: Sykler som passer perfekt til både asfalt og grusvei
+    imageFileName: gekko-gravel-tostykkbakfra.png
+    linkText: Se alle gravelsykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?a=ead1503f-f631-42d1-b85e-ef40f76284c4
 
 -   name: STR
     logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
-    linkText: Se alle cykler
-    linkUrl: http://gekkobikes.no/
+    intro: Allsidige sykler som fungerer til alle typer underlag
+    imageFileName: gekko-hybrid-siljeogmork.png
+    linkText: Se alle hybridsykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?a=9c344a38-3e0a-4b2b-88de-a5b4b04447ed
 
 -   name: CTY
     logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
