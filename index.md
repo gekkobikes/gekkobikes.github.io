@@ -5,8 +5,8 @@ layout: default
 carousel:
 -   name: Designet for norske forhold siden 1995
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://gekkobikes.no/
+    linkText: Se alle sykler
+    linkUrl: https://www.sport1.no/gekko/
     textPosition: right
 
 -   name: Designet for norske forhold siden 1995
