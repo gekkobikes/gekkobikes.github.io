@@ -89,7 +89,6 @@ headerlinks:
     
 # FOOTER LENKER
 footerlinks:
-
 -   linkText: Kontakt oss
     linkUrl: http://gekkobikes.no/
 
