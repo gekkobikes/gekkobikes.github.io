@@ -10,21 +10,28 @@ carousel:
     textPosition: right
 
 carousel:
--   name: Lav vekt, sprekt design og gjennomtenkte detaljer
-    imageFileName: gekko-terreng-stianogjoline.png
-    linkText: Se alle sykler
-    linkUrl: https://www.sport1.no/gekko/
+-   name: Velg riktig el-sykkel
+    imageFileName: gekko-elsykler-kentoghege.png
+    linkText: Les artikkelen
+    linkUrl: https://www.sport1.no/inspirasjon/sykkel/velg-riktig-elsykkel
     textPosition: right
 
 carousel:
--   name: Lav vekt, sprekt design og gjennomtenkte detaljer
-    imageFileName: gekko-terreng-stianogjoline.png
-    linkText: Se alle sykler
-    linkUrl: https://www.sport1.no/gekko/
+-   name: Hva er en gravelsykkel? 
+    imageFileName: gekko-gravel-sittende.png
+    linkText: Les artikkelen
+    linkUrl: https://www.sport1.no/inspirasjon/sykkel/gravelbike-blandeveissykkel
     textPosition: right
 
 # FORSIDE BLOKKER 50% BREDDE 
 halfwidth:
+-   name: AMT
+    logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
+    intro: Lettsyklet terrengsykler tilpasset norske forhold
+    imageFileName: 50-gekko-atm-trepaasti.png
+    linkText: Se alle terrengsykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
+    
 -   name: GRV
     logoFileName: GK_CategoryLogo_GRV_White_RGB_72dpi.png
     intro: Sykler som passer perfekt til både asfalt og grusvei
@@ -41,7 +48,7 @@ halfwidth:
 
 -   name: CTY
     logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
-    intro: Smarte el-sykler for både pending, tur eller trening
+    intro: Smarte el-sykler for både pendling, tur eller trening
     imageFileName: 50-gekko-elsykler.png
     linkText: Se alle el-sykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
@@ -52,14 +59,7 @@ halfwidth:
     imageFileName: 50-gekko-bysykkel-mork.png
     linkText: Se alle bysykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=7b221a9f-029c-4293-a7d4-de5e54260026
-
--   name: AMT
-    logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
-    intro: Lettsyklet terrengsykler tilpasset norske forhold
-    imageFileName: 50-gekko-atm-trepaasti.png
-    linkText: Se alle terrengsykler
-    linkUrl: https://www.sport1.no/varemerker/gekko/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
-
+    
 -   name: MTN JR
     logoFileName: GK_CategoryLogo_MTN-JR_White_RGB_72dpi.png
     intro: Lette, raske og tøffe sykler til barn og junior
