@@ -41,10 +41,10 @@ halfwidth:
 
 -   name: CTY
     logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
+    intro: Smarte el-sykler for både pending, tur eller trening
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://gekkobikes.no/
+    linkText: Se alle el-sykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
 
 -   name: STR
     logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
@@ -53,19 +53,19 @@ halfwidth:
     linkText: Se alle cykler
     linkUrl: http://gekkobikes.no/
 
--   name: CTY
-    logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
+-   name: AMT
+    logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
+    intro: Lettsyklet terrengsykler tilpasset norske forhold
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://gekkobikes.no/
+    linkText: Se alle terrengsykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
--   name: STR
-    logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
+-   name: MTN JR
+    logoFileName: GK_CategoryLogo_MTN-JR_White_RGB_72dpi.png
+    intro: Lette, raske og tøffe sykler til barn og junior
     imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
-    linkText: Se alle cykler
-    linkUrl: http://gekkobikes.no/
+    linkText: Se alle barn- og juniorsykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?a=be2d9e7c-0475-49d0-ae74-81483889f816
 
 # HEADER LENKER
 headerlinks:
