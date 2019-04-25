@@ -9,6 +9,20 @@ carousel:
     linkUrl: https://www.sport1.no/gekko/
     textPosition: right
 
+carousel:
+-   name: Lav vekt, sprekt design og gjennomtenkte detaljer
+    imageFileName: gekko-terreng-stianogjoline.png
+    linkText: Se alle sykler
+    linkUrl: https://www.sport1.no/gekko/
+    textPosition: right
+
+carousel:
+-   name: Lav vekt, sprekt design og gjennomtenkte detaljer
+    imageFileName: gekko-terreng-stianogjoline.png
+    linkText: Se alle sykler
+    linkUrl: https://www.sport1.no/gekko/
+    textPosition: right
+
 # FORSIDE BLOKKER 50% BREDDE 
 halfwidth:
 -   name: GRV
