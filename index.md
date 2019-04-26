@@ -1,7 +1,7 @@
 ---
 layout: default
 
-# FORSIDE KARUSELL
+# FORSIDE KARUSELL 100% BREDDE
 carousel:
 -   name: Lav vekt, sprekt design og gjennomtenkte detaljer
     imageFileName: gekko-terreng-stianogjoline.png
