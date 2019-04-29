@@ -7,3 +7,16 @@
     - Bilder skal være 1600px i bredden og 800px i høyden.
     - På skjermer over 1100px i bredden blir bilder i halv-bredde blokker kuttet til kvadrater så motivet bør legges sentrert i bildet.
     - Logotype bilder (som f.eks. GRV, CTY, MTN JR.) skal være 58px i høyden, bredden følger.
+
+
+### Developer how to
+
+#### Install locally
+```
+bundle install
+```
+
+#### Start local server
+```
+bundle exec jekyll serve
+```

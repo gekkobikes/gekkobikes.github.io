@@ -64,9 +64,15 @@
 
   <!-- HALV BREDDE -->
   {% if page.halfwidth[0] != null %}
-  <div class="block">
 
-    {% for item in page.halfwidth %}
+  {% for item in page.halfwidth %}
+
+  {% assign remainder = forloop.index0 | modulo: 2 %}
+
+  {% if forloop.first or remainder == 0 %}
+  <div class="block">
+    {% endif %}
+
     <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
       <div class="block-content">
         {% if item.logoFileName %}
@@ -78,9 +84,13 @@
         <p><span class="btn">{{item.linkText}}</span></p>
       </div>
     </a>
-    {% endfor %}
 
+    {% if forloop.last or remainder > 0 %}
   </div>
+  {% endif %}
+
+  {% endfor %}
+
   {% endif %}
 
   {{content}}
