@@ -242,6 +242,10 @@ a.block {
     height: auto;
   }
 
+  .block-content img {
+    max-width: 90%;
+  }
+
   &-bgimage {
     background-repeat: no-repeat;
     background-position: center center;
