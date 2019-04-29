@@ -9,14 +9,12 @@ carousel:
     linkUrl: https://www.sport1.no/gekko/
     textPosition: right
 
-carousel:
 -   name: Velg riktig el-sykkel
     imageFileName: gekko-elsykler-kentoghege.png
     linkText: Les artikkelen
     linkUrl: https://www.sport1.no/inspirasjon/sykkel/velg-riktig-elsykkel
     textPosition: right
 
-carousel:
 -   name: Hva er en gravelsykkel? 
     imageFileName: gekko-gravel-sittende.png
     linkText: Les artikkelen
