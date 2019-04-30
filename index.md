@@ -88,7 +88,7 @@ headerlinks:
 # FOOTER LENKER
 footerlinks:
 -   linkText: Kontakt oss
-    linkUrl: http://gekkobikes.no/
+    linkUrl: https://form.socialboards.com/sport1/sykkelsupport
 
 # FOOTER SOSIALE LENKER
 footerSocialLinks:
