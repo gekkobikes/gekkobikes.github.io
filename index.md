@@ -90,6 +90,9 @@ footerlinks:
 -   linkText: Kontakt oss
     linkUrl: https://form.socialboards.com/sport1/sykkelsupport
 
+-   linkText: Arkiv
+    linkUrl: http://arkiv.gekkobikes.no/arkiv/
+
 # FOOTER SOSIALE LENKER
 footerSocialLinks:
 -   linkText: Følg oss på Instagram
