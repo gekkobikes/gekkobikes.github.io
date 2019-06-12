@@ -3,7 +3,7 @@ layout: default
 
 # FORSIDE KARUSELL 100% BREDDE
 carousel:
--   name: Lav vekt, sprekt design og gjennomtenkte detaljer
+-   name: Holdbare, lav vekt og gjennomtenkte detaljer
     imageFileName: gekko-terreng-stianogjoline.png
     linkText: Se alle sykler
     linkUrl: https://www.sport1.no/gekko/
@@ -76,7 +76,7 @@ headerlinks:
 -   linkText: Hybrid
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=9c344a38-3e0a-4b2b-88de-a5b4b04447ed
 
--   linkText: Bysykkel
+-   linkText: Urban
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=7b221a9f-029c-4293-a7d4-de5e54260026
 
 -   linkText: Barn og junior
