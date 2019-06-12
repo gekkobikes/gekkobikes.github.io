@@ -1,12 +1,16 @@
 <header class="head">
   <div class="wrapper">
     <a href="/" class="logo">
-      <img src="./assets/img/gekko-logo.png" alt="Gekko logo">
+      <img src="./assets/img/gekko-logo.png" alt="Gekko logo" />
     </a>
     <div id="menu" role="navigation">
       <button id="btn_menu" class="btn-menu" aria-label="Meny"></button>
       <ul class="mainnav">
-        {% for item in page.headerlinks %}<li><a href="{{item.linkUrl}}">{{item.linkText}}</a></li>{% endfor %}
+        {% for item in page.headerlinks %}
+        <li>
+          <a href="{{ item.linkUrl }}" target="_blank">{{ item.linkText }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
