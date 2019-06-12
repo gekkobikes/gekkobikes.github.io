@@ -68,7 +68,7 @@ halfwidth:
 # HEADER LENKER
 headerlinks:
 -   linkText: Terreng
-    linkUrl: https://www.sport1.no/varemerker/gekko/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
+    linkUrl: https://www.sport1.no/varemerker/gekko/?ac=c89ca348-1eb5-4a46-a253-731fe22b8465
 
 -   linkText: Gravel
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=ead1503f-f631-42d1-b85e-ef40f76284c4
