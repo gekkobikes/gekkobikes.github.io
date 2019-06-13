@@ -35,7 +35,7 @@ halfwidth:
 -   name: STR
     logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
     intro: Allsidige sykler som fungerer til alle typer underlag
-    imageFileName: 50-gekko-hybrid-siljemork.png
+    imageFileName: 50STR-hybrid-hege.png
     linkText: Se alle hybridsykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=9c344a38-3e0a-4b2b-88de-a5b4b04447ed
 
