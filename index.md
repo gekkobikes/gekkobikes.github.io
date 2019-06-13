@@ -67,7 +67,7 @@ halfwidth3:
 -   name: MTN JR
     logoFileName: GK_CategoryLogo_MTN-JR_White_RGB_72dpi.png
     intro: Lette, raske og tøffe sykler til barn og junior
-    imageFileName: 50-gekko-junior.png
+    imageFileName: 50-junior-farge.png
     linkText: Se alle barn- og juniorsykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=be2d9e7c-0475-49d0-ae74-81483889f816
 
