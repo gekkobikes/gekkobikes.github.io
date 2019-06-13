@@ -42,7 +42,7 @@ halfwidth:
 -   name: CTY
     logoFileName: GK_CategoryLogo_CTY_White_RGB_72dpi.png
     intro: Smarte el-sykler for både pendling, tur eller trening
-    imageFileName: 50-gekko-elsykler.png
+    imageFileName: 50-gekko-cty-elsykkel-farge.png
     linkText: Se alle el-sykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
     
