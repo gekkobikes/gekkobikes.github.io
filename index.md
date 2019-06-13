@@ -51,7 +51,7 @@ fullwidth2:
 -   name: AMT
     logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
     intro: Lettsyklet terrengsykler tilpasset norske forhold
-    imageFileName: 50-gekko-atm-trepaasti.png
+    imageFileName: gekko-atm-ovenfra-farge-fullbredde.png
     linkText: Se alle terrengsykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?ac=c89ca348-1eb5-4a46-a253-731fe22b8465
 
