@@ -28,7 +28,7 @@ halfwidth:
     intro: Lettsyklet terrengsykler tilpasset norske forhold
     imageFileName: 50-gekko-atm-trepaasti.png
     linkText: Se alle terrengsykler
-    linkUrl: https://www.sport1.no/varemerker/gekko/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
+    linkUrl: https://www.sport1.no/varemerker/gekko/?ac=c89ca348-1eb5-4a46-a253-731fe22b8465
     
 -   name: GRV
     logoFileName: GK_CategoryLogo_GRV_White_RGB_72dpi.png
