@@ -21,8 +21,8 @@ carousel:
     linkUrl: https://www.sport1.no/inspirasjon/sykkel/gravelbike-blandeveissykkel
     textPosition: right
 
-# FORSIDE BLOKKER 50% BREDDE 
-halfwidth:
+# FORSIDE BLOKKER 100% BREDDE 
+fullwidth:
 -   name: AMT
     logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
     intro: Lettsyklet terrengsykler tilpasset norske forhold
@@ -36,7 +36,9 @@ halfwidth:
     imageFileName: 50-gekko-gravel.png
     linkText: Se alle gravelsykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=ead1503f-f631-42d1-b85e-ef40f76284c4
-
+    
+# FORSIDE BLOKKER 50% BREDDE 
+halfwidth:
 -   name: STR
     logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
     intro: Allsidige sykler som fungerer til alle typer underlag
