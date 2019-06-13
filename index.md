@@ -21,15 +21,8 @@ carousel:
     linkUrl: https://www.sport1.no/inspirasjon/sykkel/gravelbike-blandeveissykkel
     textPosition: right
 
-# FORSIDE BLOKKER 100% BREDDE 
+# FORSIDE BLOKK 100% BREDDE 
 fullwidth:
--   name: AMT
-    logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
-    intro: Lettsyklet terrengsykler tilpasset norske forhold
-    imageFileName: 50-gekko-atm-trepaasti.png
-    linkText: Se alle terrengsykler
-    linkUrl: https://www.sport1.no/varemerker/gekko/?ac=c89ca348-1eb5-4a46-a253-731fe22b8465
-    
 -   name: GRV
     logoFileName: GK_CategoryLogo_GRV_White_RGB_72dpi.png
     intro: Sykler som passer perfekt til både asfalt og grusvei
@@ -37,7 +30,7 @@ fullwidth:
     linkText: Se alle gravelsykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=ead1503f-f631-42d1-b85e-ef40f76284c4
     
-# FORSIDE BLOKKER 50% BREDDE 
+# FORSIDE BLOKK 50% BREDDE 
 halfwidth:
 -   name: STR
     logoFileName: GK_CategoryLogo_STR_White_RGB_72dpi.png
@@ -52,7 +45,18 @@ halfwidth:
     imageFileName: 50-gekko-elsykler.png
     linkText: Se alle el-sykler
     linkUrl: https://www.sport1.no/varemerker/gekko/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
+    
+# FORSIDE BLOKK 100% BREDDE 
+fullwidth2:
+-   name: AMT
+    logoFileName: GK_CategoryLogo_AMT_White_RGB_72dpi.png
+    intro: Lettsyklet terrengsykler tilpasset norske forhold
+    imageFileName: 50-gekko-atm-trepaasti.png
+    linkText: Se alle terrengsykler
+    linkUrl: https://www.sport1.no/varemerker/gekko/?ac=c89ca348-1eb5-4a46-a253-731fe22b8465
 
+# FORSIDE BLOKK 50% BREDDE 
+halfwidth3:
 -   name: TRG
     logoFileName: GK_CategoryLogo_TRG_White_RGB_72dpi.png
     intro: For pendling og turer i byen
